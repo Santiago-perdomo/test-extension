@@ -22,6 +22,7 @@ export default class App extends React.Component<{}, AppState> {
   }
 
   public async handleConnect(): Promise<void> {
+    console.log('start')
     const sdk = await init() as any;
 
     const value: any = await sdk.field.getValue();
