@@ -25,6 +25,7 @@ export default class App extends React.Component<{}, AppState> {
     const sdk = await init() as any;
 
     const value: any = await sdk.field.getValue();
+    console.log(value)
     this.setState({
       sdk,
       connected: true,
