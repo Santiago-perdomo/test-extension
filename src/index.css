@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.form-checkbox {
+  display: flex;
+}
+
+.form-checkbox__content {
+    display: flex;
+    gap: 12px;
+}
+
+.form-checkbox__svg-wrapper {
+    display: flex;
+    min-width: 24px;
+    height: 24px;
+    border: 1px solid black;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-checkbox__svg-wrapper--selected {
+  background: blue;
+
+}
+
+.form-checkbox__svg {
+    visibility: hidden;
+}
